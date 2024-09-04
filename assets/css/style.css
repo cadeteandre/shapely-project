@@ -1,0 +1,373 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway";
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ----- Styling header start -----*/
+
+header {
+    width: 100vw;
+    height: 10vh;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+}
+
+.logo {
+    color: #666;
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: 5.2rem;
+}
+
+.logo:hover {
+    color: #333;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin-right: 2rem;
+    padding: 0 11px 0 30px;
+}
+
+.nav-menu a {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 5.3rem;
+    letter-spacing: -0.1rem;
+}
+
+.nav-menu a:hover {
+    color: #337ab7;
+}
+
+/* ----- Styling header end -----*/
+/* ----- Styling main start -----*/
+
+main {
+    width: 100vw;
+}
+
+section {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    background-image: url(../images/photo-1443527216320-7e744084f5a7-1.jpg.png);
+    /* background-position-y: 5rem; */
+    background-attachment: fixed;
+    color: #FFFFFF;
+}
+
+.first-section-text {
+    margin-top: 33rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.first-section-text h1 {
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 6.4rem;
+    text-align: center;
+}
+
+.first-section-text p {
+    text-align: center;
+}
+
+section a {
+    display: inline-block;
+    width: 20rem;
+    height: 5.4rem;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.5rem;
+    align-self: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    letter-spacing: 0.1rem;
+    background-color: #745CF9;
+    border: 0.2rem solid #745CF9;
+}
+
+section a:hover {
+    background-color: #35287c;
+    border-color: #35287c;
+}
+
+.first-section-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.download-now {
+    background: rgba(255, 255, 255, 0);
+    border: 0.2rem solid #FFFFFF;
+}
+
+.download-now:hover {
+    color: #333;
+    background-color: #FFFFFF;
+}
+
+/* ----- Styling second and third section start -----*/
+.second-section, .third-section {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 10rem;
+    width: 100vw;
+    padding: 9rem 18rem;
+}
+
+.second-section img, .third-section img {
+    width: 55rem;
+    height: 35rem;
+}
+
+.second-section-text h2, .third-section-text h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3.3rem;
+    color: #0E1015;
+}
+
+.second-section-text p, .third-section-text p {
+    margin: 2.7rem 0 3.6rem 0;
+}
+
+.third-section {
+    flex-direction: row-reverse;
+    padding: 9rem 18rem;
+}
+/* ----- Styling second and third section end -----*/
+.fourth-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    background-image: url(../images/fd5b6099f0d97253c0f3372f51facc99.jpeg);
+    /* background-position-y: 17rem; */
+    background-attachment: fixed;
+    height: 40vh;
+}
+
+.fourth-section-text {
+    text-align: center;
+}
+
+.fourth-section-text h2 {
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 6.4rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.fourth-section-text p {
+    color: #FFFFFF;
+    text-align: center;
+    margin: 2.7rem 0 3.6rem 0;
+}
+
+.fifth-section {
+display: flex;
+flex-direction: column;
+align-items: center;
+align-content: center;
+justify-content: space-evenly;
+text-align: center;
+}
+
+.fifth-section-text {
+    padding: 9rem 0 2.4rem 0;
+}
+
+.fifth-section-text h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3.3rem;
+}
+
+.fifth-section-text p {
+    margin: 2.7rem 0 3.6rem 0;
+    width: 60vw;
+}
+
+.fifth-section img {
+    width: 66vw;
+    height: 75vh;
+}
+
+.sixth-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #0E1015;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.sixth-section-text h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3.3rem;
+}
+
+.sixth-section-text p {
+    margin: 2.2rem 0 1.5rem 0;
+}
+
+/* ----- Styling gallery start -----*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.gallery div {
+    flex-grow: 1;
+}
+
+.gallery img {
+    width: 30rem;
+    height: 20rem;
+    margin-bottom: 10rem;
+}
+/* ----- Styling gallery end -----*/
+
+.seventh-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-image: url(../images/3ea97c06a59aee0841f40b4f73eee4b8.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 60vh;
+}
+
+.seventh-section-text {
+    margin: 4.5rem 0 3.5rem 0;
+}
+
+.seventh-section-text h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3.3rem;
+    color: #FFFFFF;
+}
+
+.seventh-section-text p {
+    color: #FFFFFF;
+    width: 60vw;
+    margin: 4rem 0 1rem 0;
+}
+
+.customers img {
+    border-radius: 10rem;
+}
+
+.customers p {
+    margin-top: 1rem;
+}
+
+.eighth-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    height: 30vh;
+    padding: 7rem 0;
+    height: 45vh;
+}
+
+.eighth-section h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3.3rem;
+}
+
+.clients-imgs {
+    display: flex;
+    gap: 18rem;
+    list-style: none;
+}
+
+.clients-imgs img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.ninth-section {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 10rem;
+    background-color: #F5F5F5;
+    height: 25vh;
+}
+
+.ninth-section h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 4.5rem;
+}
+
+/* ----- Styling main end -----*/
+/* ----- Styling footer start -----*/
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #0E1015;
+    height: 20vh;
+    padding-left: 15rem;
+}
+
+footer p {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+/* ----- Styling footer end -----*/
