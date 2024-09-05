@@ -62,17 +62,17 @@ nav {
 
 .burger-wrapper{
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 2rem;
+    right: 2rem;
     display: none;
 }
 
 .burger{
     background-color: #131212;
-    height: 5px;
-    width: 30px;
-    margin: 2px;
-    border-radius: 5px;
+    width: 3rem;
+    height: 0.5rem;
+    margin: 0.2rem;
+    border-radius: 0.5rem;
 }
 
 /* ----- Styling header end -----*/
@@ -93,6 +93,27 @@ section p {
     font-weight: 400;
     line-height: 2.4rem;
     text-align: justify;
+}
+
+section a {
+    display: inline-block;
+    width: 20rem;
+    height: 5.4rem;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.5rem;
+    align-self: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    letter-spacing: 0.1rem;
+    background-color: #745CF9;
+    border: 0.2rem solid #745CF9;
+}
+
+section a:hover {
+    background-color: #35287c;
+    border-color: #35287c;
 }
 
 .first-section {
@@ -122,27 +143,6 @@ section p {
 
 .first-section-text p {
     text-align: center;
-}
-
-section a {
-    display: inline-block;
-    width: 20rem;
-    height: 5.4rem;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 1.5rem;
-    align-self: center;
-    font-size: 1.2rem;
-    font-weight: 700;
-    line-height: 2.4rem;
-    letter-spacing: 0.1rem;
-    background-color: #745CF9;
-    border: 0.2rem solid #745CF9;
-}
-
-section a:hover {
-    background-color: #35287c;
-    border-color: #35287c;
 }
 
 .first-section-links {
@@ -189,7 +189,6 @@ section a:hover {
 
 .third-section {
     flex-direction: row-reverse;
-    padding: 9rem 18rem;
     background-color: #F5F5F5;
 }
 /* ----- Styling second and third section end -----*/
@@ -381,6 +380,7 @@ section a:hover {
 footer {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: #0E1015;
     height: 20vh;
     padding-left: 15rem;
@@ -392,6 +392,18 @@ footer p {
     font-weight: 400;
     line-height: 2.4rem;
 }
+
+.footer-social-media {
+    display: flex;
+    gap: 1.7rem;
+    margin-right: 3rem;
+}
+
+.footer-social-media img {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
 /* ----- Styling footer end -----*/
 
 /* ========== TABLET ========== */
@@ -557,3 +569,50 @@ footer p {
     }
 
 }
+
+/* ========== SMARTPHONE ========== */
+@media only screen and (max-width: 550px) {
+
+    .burger-wrapper {
+        margin-top: 1rem;
+    }
+    .burger {
+        width: 1.5rem;
+        height: 0.2rem;
+    }
+
+    .first-section-text h1 {
+        font-size: 3.2rem;
+        font-weight: 300;
+        line-height: 4rem;
+    }
+
+    .first-section-text p {
+        font-size: 1.2rem;
+    }
+
+    .first-section-links {
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+
+    .second-section {
+        flex-direction: column;
+    }
+
+    .second-section-text, .third-section-text {
+        width: 90vw;
+    }
+    .second-section-text p, .third-section-text p {
+        color: #8C979E;
+        width: 90vw;
+        padding-right: 0;
+        margin: 0;
+    }
+
+    .third-section {
+        flex-direction: column-reverse;
+    }
+}
+
+/* Preciso resolver problemas com as sections 2 e 3 */
