@@ -441,7 +441,7 @@ footer p {
         width: 85vw;
     }
 
-    .second-section {
+    .second-section, .third-section {
         gap: 5rem;
     }
 
@@ -606,13 +606,53 @@ footer p {
     .second-section-text p, .third-section-text p {
         color: #8C979E;
         width: 90vw;
-        padding-right: 0;
-        margin: 0;
+        text-align: justify;
+    }
+
+    .third-section img {
+        margin: 0 auto 0 auto;
     }
 
     .third-section {
         flex-direction: column-reverse;
+        padding-left: 10rem;
     }
+
+    .fifth-section img {
+        height: 60vh;
+    }
+
+    .sixth-section-text {
+        height: 50vw;
+        padding-top: 6rem;
+    }
+
+    .gallery div {
+        width: 100vw;
+        margin-bottom: 0;
+    }
+
+    .eighth-section {
+        height: 40vh;
+    }
+
+    .clients-imgs {
+        gap: 6rem;
+    }
+
+    .ninth-section {
+        flex-direction: column;
+        height: 40vh;
+    }
+
+    footer {
+        padding-left: 2rem;
+    }
+
+    footer p {
+        font-size: 1.2rem
+    }
+
 }
 
 /* Preciso resolver problemas com as sections 2 e 3 */
